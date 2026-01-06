@@ -68,7 +68,7 @@ const WhatsAppWidget = () => {
           {/* Message */}
           <p className="text-sm text-gray-600 mb-4">
             Hi there 👋 <br />
-            Looking for a perfect house? I’m here to help.
+            Looking for a perfect house? I am here to help.
           </p>
 
           {/* CTA */}
