@@ -63,7 +63,7 @@ const contacts = () => {
                     Our friendly team is here to help.
                   </p>
                   <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                    hello@nexus.com or femmyd0@yahoo.com
+                   samexblogex08@yahoo.com
                   </p>
                 </div>
 

@@ -25,12 +25,16 @@ const Card = ({
           alt=""
           className="w-50% h-50% rounded-2xl"
         />
-      
       </div>
       <div>
         <p>{description}</p>
-        <p>#{new Intl.NumberFormat().format(price)}</p>
-        <p className="line-through text-gray-400">#{discount}</p>
+        <p className="text-green-600 text-lg font-bold">
+          ₦{new Intl.NumberFormat().format(price)}
+        </p>
+
+        <p className="text-yellow-500 text-sm line-through">
+          ₦{new Intl.NumberFormat().format(discount)}
+        </p>
 
         <div className="flex items-center gap-6 space-x-4">
           <p className="flex items-center font-medium text-gray-800">

@@ -28,12 +28,14 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                  <a
+                    href="https://wa.me/2348185696269"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 transition-colors duration-300 hover:text-green-500"
                   >
                     Contact Us
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link
@@ -156,8 +158,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
-          <p className="text-sm text-gray-500">
+          {/* <p className="text-sm text-gray-500">
             © 2024 All rights reserved | Website By: S.C.S.L
+          </p> */}
+          <p className="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} Website By: S.C.S.L All rights
+            reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <Link
@@ -169,6 +175,44 @@ const Footer = () => {
               </svg>
             </Link>
           </div>
+        </div>
+      </div>
+      {/* WhatsApp Notifier */}
+      <div className="fixed bottom-6 right-6 z-50 max-w-sm">
+        <div className="bg-white shadow-2xl rounded-xl p-4 border border-gray-200">
+          {/* Header */}
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white font-bold">
+              N
+            </div>
+            <div>
+              <p className="font-semibold text-gray-800">Nexus MollyB</p>
+              <p className="text-sm text-green-600 flex items-center gap-1">
+                <span className="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
+                Online Now
+              </p>
+            </div>
+          </div>
+
+          {/* Message */}
+          <p className="text-sm text-gray-600 mb-4">
+            Hi there 👋 <br />
+            Looking for a perfect house? I am here to help.
+          </p>
+
+          {/* Button */}
+          <a
+            href="https://wa.me/2348185696269?text=Hi%20there!%20I%20am%20interested%20in%20finding%20a%20house."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 rounded-lg transition duration-200"
+          >
+            {/* WhatsApp Icon */}
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.52 3.48A11.94 11.94 0 0 0 12.01 0C5.38 0 .01 5.37.01 12c0 2.12.55 4.19 1.6 6.03L0 24l6.15-1.61A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.2-3.48-8.52ZM12 22c-1.8 0-3.57-.48-5.12-1.38l-.37-.22-3.65.96.98-3.56-.24-.37A9.94 9.94 0 0 1 2 12c0-5.51 4.49-10 10-10 2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.51-4.49 10-10 10Zm5.27-7.46c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.29-.77.95-.95 1.14-.17.2-.35.22-.64.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.6.14-.14.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46s1.07 2.85 1.22 3.05c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.72-.7 1.97-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.2-.57-.35Z" />
+            </svg>
+            Start Chat on WhatsApp
+          </a>
         </div>
       </div>
     </div>
